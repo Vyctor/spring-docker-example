@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  shutdown: graceful
+spring:
+  application:
+    name: spring-dockerized-app
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot
+    username: user
+    password: user_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
